@@ -10,7 +10,7 @@ namespace Sakura
 {
     public class DBHerlper
     {
-        public static string ConnString = "server=.;database=waimai;uid=sa;pwd=123456";
+        public static string ConnString = @"server=47.96.82.85,1433;database=waimai;uid=sa;pwd=YaeMiko520@";
         public static DataTable GetDataTable(string sql)
         {
             try
