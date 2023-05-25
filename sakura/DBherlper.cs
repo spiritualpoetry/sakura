@@ -38,6 +38,7 @@ namespace Sakura
             int jieguo = cmd.ExecuteNonQuery();
             conn.Close();
             return jieguo > 0;
+
         }
     }
 }
