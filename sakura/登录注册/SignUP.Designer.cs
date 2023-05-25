@@ -39,83 +39,84 @@
             this.EmileText = new System.Windows.Forms.TextBox();
             this.YesButton = new System.Windows.Forms.Button();
             this.zhlable = new System.Windows.Forms.Label();
+            this.uidTextBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
-            // 
+            //
             // IDLable
-            // 
+            //
             this.IDLable.AutoSize = true;
             this.IDLable.Location = new System.Drawing.Point(69, 58);
             this.IDLable.Name = "IDLable";
             this.IDLable.Size = new System.Drawing.Size(29, 12);
             this.IDLable.TabIndex = 0;
             this.IDLable.Text = "账号";
-            // 
+            //
             // NameLable
-            // 
+            //
             this.NameLable.AutoSize = true;
             this.NameLable.Location = new System.Drawing.Point(69, 86);
             this.NameLable.Name = "NameLable";
             this.NameLable.Size = new System.Drawing.Size(29, 12);
             this.NameLable.TabIndex = 0;
             this.NameLable.Text = "昵称";
-            // 
+            //
             // PwdLable
-            // 
+            //
             this.PwdLable.AutoSize = true;
             this.PwdLable.Location = new System.Drawing.Point(69, 114);
             this.PwdLable.Name = "PwdLable";
             this.PwdLable.Size = new System.Drawing.Size(29, 12);
             this.PwdLable.TabIndex = 0;
             this.PwdLable.Text = "密码";
-            // 
+            //
             // YpwdLable
-            // 
+            //
             this.YpwdLable.AutoSize = true;
             this.YpwdLable.Location = new System.Drawing.Point(69, 142);
             this.YpwdLable.Name = "YpwdLable";
             this.YpwdLable.Size = new System.Drawing.Size(53, 12);
             this.YpwdLable.TabIndex = 0;
             this.YpwdLable.Text = "确认密码";
-            // 
+            //
             // EmileLable
-            // 
+            //
             this.EmileLable.AutoSize = true;
             this.EmileLable.Location = new System.Drawing.Point(69, 170);
             this.EmileLable.Name = "EmileLable";
             this.EmileLable.Size = new System.Drawing.Size(29, 12);
             this.EmileLable.TabIndex = 0;
             this.EmileLable.Text = "邮箱";
-            // 
+            //
             // NameText
-            // 
+            //
             this.NameText.Location = new System.Drawing.Point(135, 77);
             this.NameText.Name = "NameText";
             this.NameText.Size = new System.Drawing.Size(100, 21);
             this.NameText.TabIndex = 1;
-            // 
+            //
             // PwdText
-            // 
+            //
             this.PwdText.Location = new System.Drawing.Point(135, 105);
             this.PwdText.Name = "PwdText";
             this.PwdText.Size = new System.Drawing.Size(100, 21);
             this.PwdText.TabIndex = 1;
-            // 
+            //
             // YpwdText
-            // 
+            //
             this.YpwdText.Location = new System.Drawing.Point(135, 139);
             this.YpwdText.Name = "YpwdText";
             this.YpwdText.Size = new System.Drawing.Size(100, 21);
             this.YpwdText.TabIndex = 1;
-            // 
+            //
             // EmileText
-            // 
+            //
             this.EmileText.Location = new System.Drawing.Point(135, 167);
             this.EmileText.Name = "EmileText";
             this.EmileText.Size = new System.Drawing.Size(100, 21);
             this.EmileText.TabIndex = 1;
-            // 
+            //
             // YesButton
-            // 
+            //
             this.YesButton.Location = new System.Drawing.Point(98, 204);
             this.YesButton.Name = "YesButton";
             this.YesButton.Size = new System.Drawing.Size(75, 23);
@@ -123,9 +124,9 @@
             this.YesButton.Text = "提交";
             this.YesButton.UseVisualStyleBackColor = true;
             this.YesButton.Click += new System.EventHandler(this.YesButton_Click);
-            // 
+            //
             // zhlable
-            // 
+            //
             this.zhlable.AutoSize = true;
             this.zhlable.Location = new System.Drawing.Point(175, 58);
             this.zhlable.Name = "zhlable";
@@ -133,9 +134,18 @@
             this.zhlable.TabIndex = 0;
             this.zhlable.Text = "账号";
             this.zhlable.Click += new System.EventHandler(this.label1_Click);
-            // 
+            //
+            // uidTextBox
+            //
+            this.uidTextBox.Enabled = false;
+            this.uidTextBox.Location = new System.Drawing.Point(0, 0);
+            this.uidTextBox.Name = "uidTextBox";
+            this.uidTextBox.Size = new System.Drawing.Size(100, 21);
+            this.uidTextBox.TabIndex = 3;
+            this.uidTextBox.Visible = false;
+            //
             // SignUPForm
-            // 
+            //
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 262);
@@ -150,6 +160,7 @@
             this.Controls.Add(this.NameLable);
             this.Controls.Add(this.zhlable);
             this.Controls.Add(this.IDLable);
+            this.Controls.Add(this.uidTextBox);
             this.Name = "SignUPForm";
             this.Load += new System.EventHandler(this.SignUPForm_Load);
             this.ResumeLayout(false);
@@ -170,5 +181,6 @@
         private System.Windows.Forms.TextBox EmileText;
         private System.Windows.Forms.Button YesButton;
         private System.Windows.Forms.Label zhlable;
+        private System.Windows.Forms.TextBox uidTextBox;
     }
 }
