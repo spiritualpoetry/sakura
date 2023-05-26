@@ -45,81 +45,91 @@
             // IDLable
             //
             this.IDLable.AutoSize = true;
-            this.IDLable.Location = new System.Drawing.Point(69, 58);
+            this.IDLable.Location = new System.Drawing.Point(90, 64);
+            this.IDLable.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.IDLable.Name = "IDLable";
-            this.IDLable.Size = new System.Drawing.Size(29, 12);
+            this.IDLable.Size = new System.Drawing.Size(50, 23);
             this.IDLable.TabIndex = 0;
             this.IDLable.Text = "账号";
             //
             // NameLable
             //
             this.NameLable.AutoSize = true;
-            this.NameLable.Location = new System.Drawing.Point(69, 86);
+            this.NameLable.Location = new System.Drawing.Point(90, 106);
+            this.NameLable.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.NameLable.Name = "NameLable";
-            this.NameLable.Size = new System.Drawing.Size(29, 12);
+            this.NameLable.Size = new System.Drawing.Size(50, 23);
             this.NameLable.TabIndex = 0;
             this.NameLable.Text = "昵称";
             //
             // PwdLable
             //
             this.PwdLable.AutoSize = true;
-            this.PwdLable.Location = new System.Drawing.Point(69, 114);
+            this.PwdLable.Location = new System.Drawing.Point(90, 148);
+            this.PwdLable.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.PwdLable.Name = "PwdLable";
-            this.PwdLable.Size = new System.Drawing.Size(29, 12);
+            this.PwdLable.Size = new System.Drawing.Size(50, 23);
             this.PwdLable.TabIndex = 0;
             this.PwdLable.Text = "密码";
             //
             // YpwdLable
             //
             this.YpwdLable.AutoSize = true;
-            this.YpwdLable.Location = new System.Drawing.Point(69, 142);
+            this.YpwdLable.Location = new System.Drawing.Point(90, 190);
+            this.YpwdLable.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.YpwdLable.Name = "YpwdLable";
-            this.YpwdLable.Size = new System.Drawing.Size(53, 12);
+            this.YpwdLable.Size = new System.Drawing.Size(90, 23);
             this.YpwdLable.TabIndex = 0;
             this.YpwdLable.Text = "确认密码";
             //
             // EmileLable
             //
             this.EmileLable.AutoSize = true;
-            this.EmileLable.Location = new System.Drawing.Point(69, 170);
+            this.EmileLable.Location = new System.Drawing.Point(90, 232);
+            this.EmileLable.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.EmileLable.Name = "EmileLable";
-            this.EmileLable.Size = new System.Drawing.Size(29, 12);
+            this.EmileLable.Size = new System.Drawing.Size(50, 23);
             this.EmileLable.TabIndex = 0;
             this.EmileLable.Text = "邮箱";
             //
             // NameText
-            //
-            this.NameText.Location = new System.Drawing.Point(135, 77);
+            // 
+            this.NameText.Location = new System.Drawing.Point(188, 93);
+            this.NameText.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.NameText.Name = "NameText";
-            this.NameText.Size = new System.Drawing.Size(100, 21);
+            this.NameText.Size = new System.Drawing.Size(148, 32);
             this.NameText.TabIndex = 1;
             //
             // PwdText
-            //
-            this.PwdText.Location = new System.Drawing.Point(135, 105);
+            // 
+            this.PwdText.Location = new System.Drawing.Point(188, 135);
+            this.PwdText.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PwdText.Name = "PwdText";
-            this.PwdText.Size = new System.Drawing.Size(100, 21);
+            this.PwdText.Size = new System.Drawing.Size(148, 32);
             this.PwdText.TabIndex = 1;
             //
             // YpwdText
-            //
-            this.YpwdText.Location = new System.Drawing.Point(135, 139);
+            // 
+            this.YpwdText.Location = new System.Drawing.Point(188, 185);
+            this.YpwdText.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.YpwdText.Name = "YpwdText";
-            this.YpwdText.Size = new System.Drawing.Size(100, 21);
+            this.YpwdText.Size = new System.Drawing.Size(148, 32);
             this.YpwdText.TabIndex = 1;
             //
             // EmileText
-            //
-            this.EmileText.Location = new System.Drawing.Point(135, 167);
+            // 
+            this.EmileText.Location = new System.Drawing.Point(188, 227);
+            this.EmileText.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.EmileText.Name = "EmileText";
-            this.EmileText.Size = new System.Drawing.Size(100, 21);
+            this.EmileText.Size = new System.Drawing.Size(148, 32);
             this.EmileText.TabIndex = 1;
             //
             // YesButton
-            //
-            this.YesButton.Location = new System.Drawing.Point(98, 204);
+            // 
+            this.YesButton.Location = new System.Drawing.Point(133, 283);
+            this.YesButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.YesButton.Name = "YesButton";
-            this.YesButton.Size = new System.Drawing.Size(75, 23);
+            this.YesButton.Size = new System.Drawing.Size(112, 34);
             this.YesButton.TabIndex = 2;
             this.YesButton.Text = "提交";
             this.YesButton.UseVisualStyleBackColor = true;
@@ -128,9 +138,10 @@
             // zhlable
             //
             this.zhlable.AutoSize = true;
-            this.zhlable.Location = new System.Drawing.Point(175, 58);
+            this.zhlable.Location = new System.Drawing.Point(248, 64);
+            this.zhlable.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.zhlable.Name = "zhlable";
-            this.zhlable.Size = new System.Drawing.Size(29, 12);
+            this.zhlable.Size = new System.Drawing.Size(50, 23);
             this.zhlable.TabIndex = 0;
             this.zhlable.Text = "账号";
             this.zhlable.Click += new System.EventHandler(this.label1_Click);
@@ -145,10 +156,9 @@
             this.uidTextBox.Visible = false;
             //
             // SignUPForm
-            //
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 262);
+            // 
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.ClientSize = new System.Drawing.Size(426, 393);
             this.Controls.Add(this.YesButton);
             this.Controls.Add(this.EmileText);
             this.Controls.Add(this.YpwdText);
@@ -160,7 +170,9 @@
             this.Controls.Add(this.NameLable);
             this.Controls.Add(this.zhlable);
             this.Controls.Add(this.IDLable);
-            this.Controls.Add(this.uidTextBox);
+            this.Font = new System.Drawing.Font("Century", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "SignUPForm";
             this.Load += new System.EventHandler(this.SignUPForm_Load);
             this.ResumeLayout(false);
