@@ -22,15 +22,16 @@ namespace sakura.登录注册
         {
             DataTable dt = new DataTable();
             string uid, pwd, emile, name, ypwd;
-            //使用循环生成随机数生成账号，在循环中判断随机数是否在数据库重复，重复则重新生成，不重复则输出 
+            TextBox uidTextBox;
+            //使用循环生成随机数生成账号，在循环中判断随机数是否在数据库重复，重复则重新生成，不重复则输出
             //uid=随机数
             //string Ssql="select UserID from UserTable where Uid='"+uid+"';";
-            //dt=DBHerlper.GetDataTable(sql);   
+            //dt=DBHerlper.GetDataTable(sql);
             //if (dt.Rows.Count>0).
             //{
-                
+
             //}
-            //this.IDtext.Text=uid;         
+            //this.IDtext.Text=uid;
             //do
             //{
             //    Random suiji = new Random();
@@ -42,12 +43,13 @@ namespace sakura.登录注册
             //        this.IDtext.Text = uid;
             //    }
             //} while (dt.Rows.Count>0);
-            
+
             pwd = PwdText.Text;
             ypwd = YpwdText.Text;
             name = NameText.Text;
             emile = EmileText.Text;
             uid = zhlable.Text;
+            uidTextBox = new TextBox();
 
             if (NameText.Text == "")
             {
@@ -80,7 +82,7 @@ namespace sakura.登录注册
                 if (DBHerlper.ExecuteNonQuery(sql))
                 {
 
-                    MessageBox.Show("注册成功！");
+                    MessageBox.Show("注册成功！账号已复制到粘贴板。");
                     this.Close();
 
                 }
@@ -89,7 +91,7 @@ namespace sakura.登录注册
                     MessageBox.Show("注册失败");
                 }
             }
-                
+
         }
 
         private void IDtext_TextChanged(object sender, EventArgs e)
@@ -101,8 +103,8 @@ namespace sakura.登录注册
 
         private void SignUPForm_Load(object sender, EventArgs e)
         {
-            string uid; 
-            DataTable dt = new DataTable();
+            string uid;
+            DataTable dt;
             do
             {
                 Random suiji = new Random();
@@ -112,6 +114,9 @@ namespace sakura.登录注册
                 if (dt.Rows.Count == 0)
                 {
                     this.zhlable.Text=uid;
+                    this.uidTextBox.Text = this.zhlable.Text;
+                    this.uidTextBox.SelectAll();
+                    this.uidTextBox.Copy();
                 }
             } while (dt.Rows.Count > 0);
         }
