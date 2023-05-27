@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data;
+using System.Data.SqlClient;
 using Sakura;
 namespace sakura.登录注册
 {
@@ -76,20 +77,33 @@ namespace sakura.登录注册
                  MessageBox.Show("请输入邮箱！");
                  EmileText.Focus();
             }
+             
+            
             else
             {
-                string sql = string.Format("insert into  UserTable(UserID,PassWord,UserName,Emile) values('{0}','{1}','{2}','{3}')",uid,pwd,name,emile);
-                if (DBHerlper.ExecuteNonQuery(sql))
+                DataTable dataTable = new DataTable();
+                string sql1 = string.Format("select * from UserTable where Emile='{0}'", EmileText.Text);
+                dataTable = DBHerlper.GetDataTable(sql1);
+                if (dataTable.Rows.Count>0)
                 {
-
-                    MessageBox.Show("注册成功！账号已复制到粘贴板。");
-                    this.Close();
-
+                    MessageBox.Show("邮箱已被注册");
                 }
                 else
                 {
-                    MessageBox.Show("注册失败");
+                    string sql = string.Format("insert into  UserTable(UserID,PassWord,UserName,Emile) values('{0}','{1}','{2}','{3}')", uid, pwd, name, emile);
+                    if (DBHerlper.ExecuteNonQuery(sql))
+                    {
+
+                        MessageBox.Show("注册成功！账号已复制到粘贴板。");
+                        this.Close();
+
+                    }
+                    else
+                    {
+                        MessageBox.Show("注册失败");
+                    }
                 }
+                
             }
 
         }

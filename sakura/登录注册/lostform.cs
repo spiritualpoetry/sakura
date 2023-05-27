@@ -70,5 +70,10 @@ namespace sakura.登录注册
                 MessageBox.Show("请输入正确的验证码");
             }
         }
+
+        private void EmileText_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
