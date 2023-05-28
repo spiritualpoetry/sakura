@@ -57,5 +57,20 @@ namespace sakura
             登录注册.lostform lsform = new 登录注册.lostform();
             lsform.ShowDialog();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void UID_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LoginForm_Load(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
