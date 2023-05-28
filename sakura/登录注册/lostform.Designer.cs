@@ -39,26 +39,27 @@
             // EmileText
             // 
             this.EmileText.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EmileText.Location = new System.Drawing.Point(138, 120);
-            this.EmileText.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.EmileText.Location = new System.Drawing.Point(124, 125);
+            this.EmileText.Margin = new System.Windows.Forms.Padding(4);
             this.EmileText.Name = "EmileText";
-            this.EmileText.Size = new System.Drawing.Size(148, 32);
+            this.EmileText.Size = new System.Drawing.Size(148, 24);
             this.EmileText.TabIndex = 0;
+            this.EmileText.TextChanged += new System.EventHandler(this.EmileText_TextChanged);
             // 
             // emilelable
             // 
             this.emilelable.AutoSize = true;
-            this.emilelable.Location = new System.Drawing.Point(51, 127);
+            this.emilelable.Location = new System.Drawing.Point(50, 131);
             this.emilelable.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.emilelable.Name = "emilelable";
-            this.emilelable.Size = new System.Drawing.Size(44, 18);
+            this.emilelable.Size = new System.Drawing.Size(29, 12);
             this.emilelable.TabIndex = 1;
             this.emilelable.Text = "邮箱";
             // 
             // submitButton
             // 
             this.submitButton.Location = new System.Drawing.Point(294, 120);
-            this.submitButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.submitButton.Margin = new System.Windows.Forms.Padding(4);
             this.submitButton.Name = "submitButton";
             this.submitButton.Size = new System.Drawing.Size(112, 34);
             this.submitButton.TabIndex = 2;
@@ -71,16 +72,16 @@
             this.YZM.AutoSize = true;
             this.YZM.Location = new System.Drawing.Point(312, 82);
             this.YZM.Name = "YZM";
-            this.YZM.Size = new System.Drawing.Size(62, 18);
+            this.YZM.Size = new System.Drawing.Size(41, 12);
             this.YZM.TabIndex = 3;
             this.YZM.Text = "label1";
             this.YZM.Visible = false;
             // 
             // YZMText
             // 
-            this.YZMText.Location = new System.Drawing.Point(138, 179);
+            this.YZMText.Location = new System.Drawing.Point(124, 179);
             this.YZMText.Name = "YZMText";
-            this.YZMText.Size = new System.Drawing.Size(100, 28);
+            this.YZMText.Size = new System.Drawing.Size(100, 21);
             this.YZMText.TabIndex = 4;
             // 
             // button1
@@ -104,7 +105,7 @@
             this.Controls.Add(this.emilelable);
             this.Controls.Add(this.EmileText);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "lostform";
             this.Text = "lostform";
             this.Load += new System.EventHandler(this.lostform_Load);

@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using Sakura;
 
+
 namespace sakura.登录注册
 {
     public partial class lostform2 : Form
@@ -21,6 +22,13 @@ namespace sakura.登录注册
 
         private void lostform2_Load(object sender, EventArgs e)
         {
+            
+        }
+
+        private void submit_Click(object sender, EventArgs e)
+        {
+            string Emile, Pwd;
+            
             
         }
     }
