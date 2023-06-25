@@ -44,10 +44,10 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.childpanel = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SETpanel.SuspendLayout();
             this.DDpanel.SuspendLayout();
@@ -253,25 +253,14 @@
             this.panelLogo.Size = new System.Drawing.Size(232, 115);
             this.panelLogo.TabIndex = 9;
             // 
-            // panel2
+            // label1
             // 
-            this.panel2.BackColor = System.Drawing.Color.DodgerBlue;
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(232, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1285, 115);
-            this.panel2.TabIndex = 1;
-            // 
-            // childpanel
-            // 
-            this.childpanel.AutoScroll = true;
-            this.childpanel.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.childpanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.childpanel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.childpanel.Location = new System.Drawing.Point(232, 115);
-            this.childpanel.Name = "childpanel";
-            this.childpanel.Size = new System.Drawing.Size(1285, 612);
-            this.childpanel.TabIndex = 2;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(72, 65);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(65, 19);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "点个餐先";
             // 
             // pictureBox1
             // 
@@ -283,14 +272,25 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // label1
+            // panel2
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(72, 65);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(90, 23);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "点个餐先";
+            this.panel2.BackColor = System.Drawing.Color.DodgerBlue;
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(232, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1285, 62);
+            this.panel2.TabIndex = 1;
+            // 
+            // childpanel
+            // 
+            this.childpanel.AutoScroll = true;
+            this.childpanel.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.childpanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.childpanel.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.childpanel.Location = new System.Drawing.Point(232, 62);
+            this.childpanel.Name = "childpanel";
+            this.childpanel.Size = new System.Drawing.Size(1285, 741);
+            this.childpanel.TabIndex = 2;
             // 
             // MainForm
             // 

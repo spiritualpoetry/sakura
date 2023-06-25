@@ -66,7 +66,22 @@ namespace sakura
                 submenu.Visible = false;
             }
         }
-
+        private Form activeForm = null;//添加变量存放当前显示窗体
+        private void openchildform(Form childform)
+        {
+            if (activeForm != null) 
+            {
+                activeForm.Close();
+            }
+            activeForm = childform;
+            childform.TopLevel = false;
+            childform.FormBorderStyle = FormBorderStyle.None;// 去边框
+            childform.Dock= DockStyle.Fill;
+            childpanel.Controls.Add(childform);//窗体填充容器控件
+            childpanel.Tag = childform;
+            childform.Show();
+        }
+        #region 点餐
         private void button2_Click(object sender, EventArgs e)
         {
             showsubmenu(DCpanel);
@@ -75,13 +90,15 @@ namespace sakura
         private void button3_Click(object sender, EventArgs e)
         {
             hidesubmenu();
+            openchildform(new Form1());
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
             hidesubmenu();
         }
-
+        #endregion
+        #region 订单
         private void button5_Click_1(object sender, EventArgs e)
         {
             showsubmenu(DDpanel);
@@ -91,7 +108,8 @@ namespace sakura
         {
             hidesubmenu();
         }
-
+        #endregion
+        #region 设置
         private void button8_Click(object sender, EventArgs e)
         {
             showsubmenu(SETpanel);
@@ -111,5 +129,6 @@ namespace sakura
         {
             hidesubmenu();
         }
+        #endregion  
     }
 }

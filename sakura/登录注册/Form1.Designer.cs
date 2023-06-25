@@ -38,11 +38,11 @@
             this.SignUp = new System.Windows.Forms.Button();
             this.lostpwd = new System.Windows.Forms.Button();
             this.panelBG = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.登录lb = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.syslb = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.panelBG.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -103,7 +103,7 @@
             this.PWD.Margin = new System.Windows.Forms.Padding(4);
             this.PWD.Name = "PWD";
             this.PWD.PasswordChar = '*';
-            this.PWD.Size = new System.Drawing.Size(66, 24);
+            this.PWD.Size = new System.Drawing.Size(102, 24);
             this.PWD.TabIndex = 2;
             // 
             // UID
@@ -111,7 +111,7 @@
             this.UID.Location = new System.Drawing.Point(517, 231);
             this.UID.Margin = new System.Windows.Forms.Padding(4);
             this.UID.Name = "UID";
-            this.UID.Size = new System.Drawing.Size(66, 24);
+            this.UID.Size = new System.Drawing.Size(102, 24);
             this.UID.TabIndex = 2;
             this.UID.TextChanged += new System.EventHandler(this.UID_TextChanged);
             // 
@@ -152,6 +152,15 @@
             this.panelBG.Size = new System.Drawing.Size(336, 501);
             this.panelBG.TabIndex = 5;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(46, 305);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(241, 19);
+            this.label5.TabIndex = 1;
+            this.label5.Text = "What do you see Ordering system";
+            // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.DeepSkyBlue;
@@ -162,6 +171,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // 登录lb
             // 
@@ -194,15 +204,6 @@
             this.syslb.Size = new System.Drawing.Size(120, 17);
             this.syslb.TabIndex = 7;
             this.syslb.Text = "你瞅啥点餐系统";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(46, 305);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(241, 19);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "What do you see Ordering system";
             // 
             // LoginForm
             // 
